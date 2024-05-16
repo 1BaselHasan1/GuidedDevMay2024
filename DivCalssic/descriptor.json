@@ -1,0 +1,17 @@
+﻿{
+  "Descriptor": {
+    "UId": "c53b11d8-7194-d7fd-2ca8-a3710c169ad6",
+    "Name": "DivCalssic",
+    "Type": 1,
+    "ModifiedOnUtc": "\/Date(1715804450000)\/",
+    "Maintainer": "Customer",
+    "ProjectPath": "Files/DivCalssic.csproj",
+    "DependsOn": [
+      {
+        "UId": "fe1effeb-74f2-42c5-b5e1-dfe0313b86bf",
+        "PackageVersion": "7.8.0",
+        "Name": "Studio"
+      }
+    ]
+  }
+}
