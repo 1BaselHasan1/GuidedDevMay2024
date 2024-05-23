@@ -336,13 +336,13 @@
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
-		<Reference Include="CrtUIPlatform">
-			<HintPath>$(RelativePkgFolderPath)/CrtUIPlatform/$(StandalonePackageAssemblyPath)/CrtUIPlatform.dll</HintPath>
+		<Reference Include="CrtUIPlatform7x">
+			<HintPath>$(RelativePkgFolderPath)/CrtUIPlatform7x/$(StandalonePackageAssemblyPath)/CrtUIPlatform7x.dll</HintPath>
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
-		<Reference Include="CrtUIPlatform7x">
-			<HintPath>$(RelativePkgFolderPath)/CrtUIPlatform7x/$(StandalonePackageAssemblyPath)/CrtUIPlatform7x.dll</HintPath>
+		<Reference Include="CrtUIPlatform">
+			<HintPath>$(RelativePkgFolderPath)/CrtUIPlatform/$(StandalonePackageAssemblyPath)/CrtUIPlatform.dll</HintPath>
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
@@ -366,13 +366,13 @@
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
-		<Reference Include="CrtML">
-			<HintPath>$(RelativePkgFolderPath)/CrtML/$(StandalonePackageAssemblyPath)/CrtML.dll</HintPath>
+		<Reference Include="CrtCalendar">
+			<HintPath>$(RelativePkgFolderPath)/CrtCalendar/$(StandalonePackageAssemblyPath)/CrtCalendar.dll</HintPath>
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
-		<Reference Include="CrtCalendar">
-			<HintPath>$(RelativePkgFolderPath)/CrtCalendar/$(StandalonePackageAssemblyPath)/CrtCalendar.dll</HintPath>
+		<Reference Include="CrtML">
+			<HintPath>$(RelativePkgFolderPath)/CrtML/$(StandalonePackageAssemblyPath)/CrtML.dll</HintPath>
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
@@ -386,23 +386,13 @@
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
-		<Reference Include="CrtWebhookServiceBase">
-			<HintPath>$(RelativePkgFolderPath)/CrtWebhookServiceBase/$(StandalonePackageAssemblyPath)/CrtWebhookServiceBase.dll</HintPath>
-			<SpecificVersion>False</SpecificVersion>
-			<Private>False</Private>
-		</Reference>
 		<Reference Include="CrtSmsIntegration">
 			<HintPath>$(RelativePkgFolderPath)/CrtSmsIntegration/$(StandalonePackageAssemblyPath)/CrtSmsIntegration.dll</HintPath>
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
-		<Reference Include="FeatureToggling">
-			<HintPath>$(RelativePkgFolderPath)/FeatureToggling/$(StandalonePackageAssemblyPath)/FeatureToggling.dll</HintPath>
-			<SpecificVersion>False</SpecificVersion>
-			<Private>False</Private>
-		</Reference>
-		<Reference Include="XSSProtection">
-			<HintPath>$(RelativePkgFolderPath)/XSSProtection/$(StandalonePackageAssemblyPath)/XSSProtection.dll</HintPath>
+		<Reference Include="CrtWebhookServiceBase">
+			<HintPath>$(RelativePkgFolderPath)/CrtWebhookServiceBase/$(StandalonePackageAssemblyPath)/CrtWebhookServiceBase.dll</HintPath>
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
@@ -426,6 +416,11 @@
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
+		<Reference Include="FeatureToggling">
+			<HintPath>$(RelativePkgFolderPath)/FeatureToggling/$(StandalonePackageAssemblyPath)/FeatureToggling.dll</HintPath>
+			<SpecificVersion>False</SpecificVersion>
+			<Private>False</Private>
+		</Reference>
 		<Reference Include="MLProcessDesigner">
 			<HintPath>$(RelativePkgFolderPath)/MLProcessDesigner/$(StandalonePackageAssemblyPath)/MLProcessDesigner.dll</HintPath>
 			<SpecificVersion>False</SpecificVersion>
@@ -438,6 +433,11 @@
 		</Reference>
 		<Reference Include="CrtUISwitcher">
 			<HintPath>$(RelativePkgFolderPath)/CrtUISwitcher/$(StandalonePackageAssemblyPath)/CrtUISwitcher.dll</HintPath>
+			<SpecificVersion>False</SpecificVersion>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="XSSProtection">
+			<HintPath>$(RelativePkgFolderPath)/XSSProtection/$(StandalonePackageAssemblyPath)/XSSProtection.dll</HintPath>
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>

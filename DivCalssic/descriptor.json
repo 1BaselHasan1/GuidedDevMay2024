@@ -3,10 +3,21 @@
     "UId": "c53b11d8-7194-d7fd-2ca8-a3710c169ad6",
     "Name": "DivCalssic",
     "Type": 1,
-    "ModifiedOnUtc": "\/Date(1715804450000)\/",
+    "ModifiedOnUtc": "\/Date(1716388103000)\/",
     "Maintainer": "Customer",
     "ProjectPath": "Files/DivCalssic.csproj",
     "DependsOn": [
+      {
+        "UId": "26d32ae9-0ed7-4966-a1c2-be3c1bc7e842",
+        "Name": "UsrRealty",
+        "Type": 1
+      },
+      {
+        "UId": "2ecba2bd-b810-47a5-a1b1-08c888529d6c",
+        "PackageVersion": "7.8.0",
+        "Name": "CrtCustomer360App",
+        "Type": 1
+      },
       {
         "UId": "fe1effeb-74f2-42c5-b5e1-dfe0313b86bf",
         "PackageVersion": "7.8.0",

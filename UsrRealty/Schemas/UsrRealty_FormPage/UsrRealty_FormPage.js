@@ -95,6 +95,47 @@ define("UsrRealty_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 			},
 			{
 				"operation": "insert",
+				"name": "ButtonAction",
+				"values": {
+					"type": "crt.Button",
+					"caption": "#ResourceString(ButtonAction_caption)#",
+					"color": "primary",
+					"disabled": false,
+					"size": "medium",
+					"iconPosition": "left-icon",
+					"visible": true,
+					"menuItems": [],
+					"clickMode": "menu",
+					"icon": "process-button-icon"
+				},
+				"parentName": "CardToggleContainer",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "MenuItemCalcAvgPrise",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "#ResourceString(MenuItem_62psik7_caption)#",
+					"visible": true,
+					"clicked": {
+						"request": "crt.RunBusinessProcessRequest",
+						"params": {
+							"processName": "UsrCalcAverageRealtyPriceProcess",
+							"processRunType": "ForTheSelectedPage",
+							"showNotification": true,
+							"recordIdProcessParameterName": "RealtyIdParameter"
+						}
+					},
+					"icon": "webforms-button-icon"
+				},
+				"parentName": "ButtonAction",
+				"propertyName": "menuItems",
+				"index": 0
+			},
+			{
+				"operation": "insert",
 				"name": "PushMeButton",
 				"values": {
 					"type": "crt.Button",
@@ -112,7 +153,7 @@ define("UsrRealty_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 				},
 				"parentName": "CardToggleContainer",
 				"propertyName": "items",
-				"index": 0
+				"index": 1
 			},
 			{
 				"operation": "insert",

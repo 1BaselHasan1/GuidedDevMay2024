@@ -1,5 +1,13 @@
 <Project>
 	<ItemGroup Label="Entity Files" Condition="'$(PkgPath)' != ''">
+		<Compile Include="$(PkgPath)/DivCalssic/Schemas/Account/Account.cs" Condition="Exists('$(PkgPath)/DivCalssic/Schemas/Account/Account.cs')" />
+		<Compile Include="$(PkgPath)/DivCalssic/Schemas/UsrRealtyClassic/UsrRealtyClassic.cs" Condition="Exists('$(PkgPath)/DivCalssic/Schemas/UsrRealtyClassic/UsrRealtyClassic.cs')" />
+		<Compile Include="$(PkgPath)/DivCalssic/Schemas/UsrRealtyClassicFile/UsrRealtyClassicFile.cs" Condition="Exists('$(PkgPath)/DivCalssic/Schemas/UsrRealtyClassicFile/UsrRealtyClassicFile.cs')" />
+		<Compile Include="$(PkgPath)/DivCalssic/Schemas/UsrRealtyClassicFolder/UsrRealtyClassicFolder.cs" Condition="Exists('$(PkgPath)/DivCalssic/Schemas/UsrRealtyClassicFolder/UsrRealtyClassicFolder.cs')" />
+		<Compile Include="$(PkgPath)/DivCalssic/Schemas/UsrRealtyClassicInFolder/UsrRealtyClassicInFolder.cs" Condition="Exists('$(PkgPath)/DivCalssic/Schemas/UsrRealtyClassicInFolder/UsrRealtyClassicInFolder.cs')" />
+		<Compile Include="$(PkgPath)/DivCalssic/Schemas/UsrRealtyClassicInTag/UsrRealtyClassicInTag.cs" Condition="Exists('$(PkgPath)/DivCalssic/Schemas/UsrRealtyClassicInTag/UsrRealtyClassicInTag.cs')" />
+		<Compile Include="$(PkgPath)/DivCalssic/Schemas/UsrRealtyClassicTag/UsrRealtyClassicTag.cs" Condition="Exists('$(PkgPath)/DivCalssic/Schemas/UsrRealtyClassicTag/UsrRealtyClassicTag.cs')" />
+		<Compile Include="$(PkgPath)/DivCalssic/Schemas/UsrRealtyOfferTypeClassic/UsrRealtyOfferTypeClassic.cs" Condition="Exists('$(PkgPath)/DivCalssic/Schemas/UsrRealtyOfferTypeClassic/UsrRealtyOfferTypeClassic.cs')" />
 		<Compile Include="$(PkgPath)/DivCalssic/Schemas/UsrRealtyTypeClassic/UsrRealtyTypeClassic.cs" Condition="Exists('$(PkgPath)/DivCalssic/Schemas/UsrRealtyTypeClassic/UsrRealtyTypeClassic.cs')" />
 		<Compile Include="$(PkgPath)/DivCalssic/Schemas/UsrVwContactAgeDays/UsrVwContactAgeDays.cs" Condition="Exists('$(PkgPath)/DivCalssic/Schemas/UsrVwContactAgeDays/UsrVwContactAgeDays.cs')" />
 	</ItemGroup>

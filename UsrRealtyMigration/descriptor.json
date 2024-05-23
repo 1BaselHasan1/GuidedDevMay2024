@@ -1,0 +1,23 @@
+﻿{
+  "Descriptor": {
+    "UId": "497e1a1b-b8fd-4f3c-852c-1393620a786d",
+    "Name": "UsrRealtyMigration",
+    "Type": 1,
+    "ModifiedOnUtc": "\/Date(1632313759000)\/",
+    "Maintainer": "Customer",
+    "ProjectPath": "Files/UsrRealtyMigration.csproj",
+    "DependsOn": [
+      {
+        "UId": "012e2e14-082b-ac2b-da5a-2fc87bad41d4",
+        "PackageVersion": "7.8.0",
+        "Name": "CrtCore",
+        "Type": 1
+      },
+      {
+        "UId": "c53b11d8-7194-d7fd-2ca8-a3710c169ad6",
+        "Name": "DivCalssic",
+        "Type": 1
+      }
+    ]
+  }
+}

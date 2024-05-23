@@ -15,6 +15,14 @@ define("UsrRealty_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 			},
 			{
 				"operation": "merge",
+				"name": "MainFilterContainer",
+				"values": {
+					"visible": true,
+					"alignItems": "stretch"
+				}
+			},
+			{
+				"operation": "merge",
 				"name": "FolderTree",
 				"values": {
 					"rootSchemaName": "UsrRealty"
@@ -85,8 +93,44 @@ define("UsrRealty_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 							"dataValueType": 10,
 							"referenceSchemaName": "UsrRealtyOfferType"
 						}
-					]
+					],
+					"selectionState": "$DataTable_SelectionState",
+					"_selectionOptions": {
+						"attribute": "DataTable_SelectionState"
+					}
 				}
+			},
+			{
+				"operation": "insert",
+				"name": "Button_i69vm1m",
+				"values": {
+					"type": "crt.Button",
+					"caption": "#ResourceString(Button_i69vm1m_caption)#",
+					"color": "primary",
+					"disabled": false,
+					"size": "medium",
+					"iconPosition": "only-text",
+					"layoutConfig": {},
+					"visible": true,
+					"clicked": {
+						"request": "crt.RunBusinessProcessRequest",
+						"params": {
+							"processName": "UsrCalcAverageRealtyPriceProcess",
+							"processRunType": "ForTheSelectedRecords",
+							"showNotification": true,
+							"dataSourceName": "PDS",
+							"parameterMappings": {
+								"RealtyIdParameter": "Id"
+							},
+							"filters": "$Items | crt.ToCollectionFilters : 'Items' : $DataTable_SelectionState | crt.SkipIfSelectionEmpty : $DataTable_SelectionState",
+							"sorting": "$ItemsSorting"
+						}
+					},
+					"clickMode": "default"
+				},
+				"parentName": "RightFilterContainer",
+				"propertyName": "items",
+				"index": 0
 			}
 		]/**SCHEMA_VIEW_CONFIG_DIFF*/,
 		viewModelConfigDiff: /**SCHEMA_VIEW_MODEL_CONFIG_DIFF*/[
